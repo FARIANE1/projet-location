@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="inscription.css">
+    <link rel="stylesheet" href="reserv.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+
+    <title>signup</title>
+</head>
+<body>
+    <div id="msgs" class="msg">
+        <h2>you're successfully reserved the room </h2>
+        <p id="cityname"></p>
+        <p id="ruration"></p>
+        <p id="emailholder"></p>
+        <p id="phoneNumber"></p>
+        <p id="paidprice"></p>
+        <input id="closee" type="button" value="close">
+    </div>
+     <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i style="color: aliceblue; top: 500px; background-color: black;opacity: 0.5;" class="fas fa-bars"></i>	
+                </label>
+                <label class="uu"></label>
+                <ul>
+                    
+                    <li><a  href="style.html">accuiel</a></li>
+                    <li><a href="inscription.html">inscription </a></li>
+                    <li><a href="reservation.html">Réservation </a></li>
+                   
+                    
+        
+                </ul>
+            </nav>
+            <div class="header">
+      
+                    <img id="vip" src="VIP.png" width="265px" height="100px">
+                  
+                    <div class="titreheader"> 
+                      <h1>Location de Voiture Maroc</h1>
+                     
+                    </div>
+            </div>
+    
+    <div class="form">
+        <div class="head">
+            <h1 class="titell" >reservation</h1>
+        </div>
+        <div class="theform">
+            <select name="city" id="city">
+                <option value="Range Rover">Range Rover</option>
+                <option value="BMW">BMW</option>
+                <option value="Lamborghini">Lamborghini </option>
+                <option value="Audi r8">Audi r8</option>
+                <option value="Audi r4">Audi r4</option>
+            </select>
+            <select name="time" id="thetime">
+                <option value="24">1 DAY</option>
+                <option value="48">2 DAYS</option>
+                <option value="72">3 DAYS</option>
+                <option value="168">7 DAYS</option>
+            </select>
+            <div class="smalls">
+                <input placeholder="enter you phone number" type="text" name="phone" id="phone">
+                <input placeholder="enter you email" type="text" name="email" id="email">
+            </div>
+            <div class="prices">
+            <button id="room">2000 DH</button>
+            <button id="tax">100 DH</button>
+            <button id="tPrice">The Total price is 2100 DH</button>
+            </div>
+            <input id="sform" class="submit_btn" type="button" value="confirmer">
+        </div>
+    </div>
+
+
+
+    
+<script src="reserv.js"></script>
+<footer>
+    <div class="footer-container">
+        <div class="left-col">
+            <img src="VIP.png" alt="" class="logo" >
+            <div class="social-media">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p class="rights-text">©️ 2020 Location Voiture. All Rights Reserved.</p>
+        </div>
+        <div class="right-col">
+         
+            <div class="borderr"></div>
+           
+            <form action="" class="newsletter-form">
+                <input type="text" class="txtb" placeholder="Enter Your Email">
+                <input type="submit" class="btn" value="submit">
+            </form> 
+        </div>
+    </div>
+
+</footer>
+
+
+   
+    
+</body>
+</html>

@@ -1,0 +1,141 @@
+$font: 'Oswald', sans-serif;
+  $font2:'Source Sans Pro', sans-serif;
+$font3: 'Source Sans Pro', sans-serif;
+$font3: 'Zhi Mang Xing', cursive;
+$font3: 'Indie Flower', cursive;
+  
+
+
+
+
+.msg{
+    position: absolute;
+    z-index: 999;
+    width: 30%;
+    top: 900px;
+    transform: translate(-50%, -50%);
+    left: -300%;
+    height: fit-content;
+    background-color:blueviolet;
+    color: white;
+    transition: all 1s ease-in-out;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    font-family: $font1;
+     min-width: 300px;
+    @media (max-width:600px){
+        left: -600%;
+        padding: 12px;
+        top: 900px;
+        *{
+            font-size: 10px !important;
+        }
+    }
+    h2{
+        margin: 20px 0px;
+    }
+    input{
+        width: 100px;
+        font-size: 26px;
+        font-weight: 600;
+        margin: 50px auto;
+        display: block;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+}
+.form{
+    width: 80%;
+    height: 700px;
+    margin: 50px auto;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    .head{
+        flex-basis: 9%;
+        padding-top: 20px;
+        background-color:grey;
+        .titell{
+            text-align: center;
+            font-family: $font3;
+
+        }
+        
+    }
+    .theform{
+        flex-basis: 91%;
+        background-color: black;
+        select{
+            display: block;
+            width: 90%;
+            margin: 63px auto;
+            height: 40px;
+            font-size: 22px;
+            color: rgb(26, 24, 24);
+            font-weight: 700;
+        }
+        .smalls{
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+            input{
+                height: 30px;
+                width: 30%;
+                margin: 30px 0px;
+                font-size: 20px;
+                font-weight: 700px;
+            }
+            @media (max-width : 700px){
+                display: block;
+                input{
+                    display: block;
+                    width: 95%;
+                    margin: 30px  auto;
+                    
+                }
+            }
+        }
+        .prices{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            button{
+                height: 40px;
+                font-size: 20px;
+                font-weight: 700;
+                flex-basis: 38%;
+                &:first-of-type,&:nth-of-type(2){
+                    flex-basis: 28%;
+                }
+
+            }
+        }
+        .submit_btn{
+            width: 20%;
+            display: block;
+            margin: 50px auto;
+            height: 40px;
+            background-color:red;
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+
+        }
+    }
+    @media ( max-width:800px){
+        * {font-size: 16px !important;}
+        
+    }
+    @media(max-width:500px){
+        button{
+    font-size: 10px !important;
+    }
+    }
+}

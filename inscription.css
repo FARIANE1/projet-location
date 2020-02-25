@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.label.uu {
+  color: black;
+  font-size: 25px;
+  line-height: 100px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  padding: 1px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+a.active, a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: red;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 33px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 952px) {
+  .checkbtn {
+    display: block;
+    top: 0px;
+    left: 450px;
+  }
+  ul {
+    position: absolute;
+    width: 86%;
+    height: 85vh;
+    background: black;
+    top: 30px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    top: 0px;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: white;
+  }
+  a:hover, a.active {
+    background: none;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+  }
+}
+
+.header {
+  background-image: url("range.jpg");
+  background-position: center;
+  height: 600px;
+  background-size: cover;
+}
+
+.header #vip {
+  margin-left: -27px;
+}
+
+.titreheader {
+  margin-top: 60px;
+  font-family: "Oswald", sans-serif;
+  margin-left: 100px;
+  font-family: "Indie Flower", cursive;
+}
+
+.titreheader h1:hover {
+  color: red;
+}
+
+.section_connection, .section_galerie {
+  margin: auto;
+  margin-top: 100px;
+  height: 600px;
+  width: 1200px;
+  -webkit-box-shadow: 10px 10px 10px 10px #888888;
+  box-shadow: 10px 10px 10px 10px #888888;
+}
+
+.connection_image {
+  width: 60%;
+  background-color: #cfcfcf;
+  height: 600px;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: animate 24s ease-in-out infinite;
+  animation: animate 24s ease-in-out infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-image: url("un.jpg");
+  }
+  20% {
+    background-image: url("uu.jpg");
+  }
+  40% {
+    background-image: url("dd.jpg");
+  }
+  60% {
+    background-image: url("BMW.jpg");
+  }
+  80% {
+    background-image: url("lg.jpg");
+  }
+  100% {
+    background-image: url("unnamed.jpg");
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-image: url("un.jpg");
+  }
+  20% {
+    background-image: url("uu.jpg");
+  }
+  40% {
+    background-image: url("dd.jpg");
+  }
+  60% {
+    background-image: url("BMW.jpg");
+  }
+  80% {
+    background-image: url("lg.jpg");
+  }
+  100% {
+    background-image: url("unnamed.jpg");
+  }
+}
+
+.section_galerie img {
+  width: 540px;
+  height: 80%;
+  margin-top: 5%;
+}
+
+.section_galerie .slid-1 {
+  font-size: 40px;
+  width: 60px;
+  position: relative;
+  float: left;
+  top: 260px;
+  left: 20px;
+  text-align: center;
+}
+
+.section_galerie .slid_1 {
+  font-size: 40px;
+  width: 60px;
+  position: relative;
+  float: right;
+  top: 260px;
+  right: 20px;
+  text-align: center;
+}
+
+.section_galerie .slid_1:hover {
+  cursor: pointer;
+  background-color: rgba(113, 113, 113, 0.3);
+}
+
+.section_galerie .slid-1:hover {
+  cursor: pointer;
+  background-color: rgba(113, 113, 113, 0.3);
+}
+
+.bg_connexion {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.connection_form {
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  float: left;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.connection_form h1 {
+  margin: 70px 0px;
+  color: red;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.connection_form .input_text {
+  width: 300px;
+  height: 40px;
+  font-size: 25px;
+  border: 0px solid black;
+  border-bottom: 1px solid black;
+  outline-color: white;
+  margin-bottom: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.connection_form .btn_connection {
+  margin-top: 50px;
+  border: 0px solid black;
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 40px;
+  color: white;
+  background-color: red;
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.connection_form a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .section_connection {
+    height: 900px;
+    width: 481px;
+  }
+  .connection_image {
+    width: 100%;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=inscription.css.map */

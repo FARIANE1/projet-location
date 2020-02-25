@@ -1,0 +1,493 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.label.uu {
+  color: black;
+  font-size: 25px;
+  line-height: 100px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  padding: 1px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+a.active, a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: red;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 33px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 952px) {
+  .checkbtn {
+    display: block;
+    top: 0px;
+    left: 450px;
+  }
+  ul {
+    position: absolute;
+    width: 86%;
+    height: 85vh;
+    background: black;
+    top: 30px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    top: 0px;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: white;
+  }
+  a:hover, a.active {
+    background: none;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+  }
+}
+
+.header {
+  background-image: url("range.jpg");
+  background-position: center;
+  height: 600px;
+  background-size: cover;
+}
+
+.header #vip {
+  margin-left: -27px;
+}
+
+.titreheader {
+  margin-top: 60px;
+  font-family: "Oswald", sans-serif;
+  margin-left: 100px;
+  font-family: "Indie Flower", cursive;
+}
+
+.titreheader h1:hover {
+  color: red;
+}
+
+.container1 {
+  width: 95%;
+  margin: 20px auto;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    overflow-y: hidden;
+    height: auto;
+  }
+}
+
+.container1 #car {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 30px;
+  font-family: "Indie Flower", cursive;
+}
+
+.container1 #car:hover {
+  color: red;
+}
+
+.container1 .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .container1 .container2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1000px;
+  }
+}
+
+.container1 .container2 .imag1 {
+  overflow: hidden;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-image: url(range2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container1 .container2 .imag1 {
+    margin-bottom: 20px;
+  }
+}
+
+.container1 .container2 .imag1 #PROMO {
+  margin-top: 20%;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 30px;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+.container1 .container2 .imag1 #promo2 {
+  font-size: 70px;
+  color: red;
+  margin-left: 236px;
+  font-family: "Oswald", sans-serif;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 750px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 750px;
+  }
+}
+
+.paragraphe2 {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%;
+  padding: 60px;
+  font-family: "Oswald", sans-serif;
+}
+
+.paragraphe2 > * {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.paragraphe2::after {
+  clear: both;
+  display: table;
+}
+
+#car2 {
+  text-align: center;
+  margin: 94px auto 30px;
+  font-family: "Indie Flower", cursive;
+  display: block;
+  font-size: 49px;
+}
+
+#car2:hover {
+  color: red;
+}
+
+#slider {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#slider > img {
+  height: 50%;
+  width: 100%;
+}
+
+#precedent, #suivant {
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  color: rgba(220, 220, 220, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+#precedent {
+  left: 0;
+}
+
+#suivant {
+  right: 0;
+}
+
+#slider:hover #precedent, #slider:hover #suivant {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  #slider {
+    width: 100%;
+  }
+}
+
+footer {
+  background: grey;
+  padding: 50px 0;
+  margin-top: 10%;
+}
+
+.footer-container {
+  max-width: 1543px;
+  margin: auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.logo {
+  width: 220px;
+  margin-top: -33px;
+}
+
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a {
+  color: #001a21;
+  margin-right: 25px;
+  font-size: 25px;
+  text-decoration: none;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.social-media a:hover {
+  color: red;
+}
+
+.right-col h1 {
+  font-size: 26px;
+}
+
+.newsletter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 51px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.txtb {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn {
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: red;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  -webkit-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+}
+
+.btn:hover {
+  opacity: .7;
+  color: white;
+  background-color: black;
+}
+
+.reser {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+.inboxlog {
+  width: 320px;
+  height: 420px;
+  background: #82ccdd;
+  color: #fff;
+  margin-top: 24%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.ava {
+  width: 120px;
+  height: 120px;
+  margin-top: -43%;
+  margin-left: 21%;
+  position: absolute;
+}
+
+.inboxlog p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #3a2650;
+}
+
+.inboxlog input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inboxlog input[type="text"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+.inboxlog input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #3a2650;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.inboxlog input[type="submit"]:hover {
+  cursor: pointer;
+  background: #fffaf0;
+  color: black;
+}
+
+.inboxlog a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: #3a2650;
+}
+
+.inboxlog a:hover {
+  color: white;
+}
+
+.rights-text {
+  font-family: "Indie Flower", cursive;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-top: 17px;
+  }
+}
+
+.rights-text {
+  font-family: "Indie Flower", cursive;
+}
+/*# sourceMappingURL=style.css.map */
