@@ -97,11 +97,14 @@ a.active, a:hover {
   background-image: url("range.jpg");
   background-position: center;
   height: 600px;
+  width: 100%;
+  /* height: 100%; */
   background-size: cover;
+  /* position: relative; */
 }
 
 .header #vip {
-  margin-left: -27px;
+  margin-left: -15px;
 }
 
 .titreheader {
@@ -133,7 +136,35 @@ a.active, a:hover {
     overflow-y: hidden;
     height: auto;
   }
+  .header{
+    height: 100% !important;
+  }
+   #vip {
+    width: 32%;
+  }
+  h1 {
+    position: RELATIVE;
+    font-size: 18px;
+    left: 0%;
+  
+    margin-top: 117px;
+    COLOR: black;
+    
+   
+    /* TEXT-ALIGN: CENTER; */
 }
+.left-col {
+  margin-left: 58px;
+}s
+
+
+
+  
+
+
+  }
+
+
 
 .container1 #car {
   text-align: center;
@@ -373,6 +404,7 @@ footer {
   outline: none;
   border-radius: 30px;
   min-width: 260px;
+  margin-right: 29px
 }
 
 .btn {
@@ -384,7 +416,7 @@ footer {
   font-weight: 700;
   outline: none;
   border-radius: 30px;
-  margin-left: 20px;
+  margin-top: 7px;
   cursor: pointer;
   -webkit-transition: opacity .3s linear;
   transition: opacity .3s linear;

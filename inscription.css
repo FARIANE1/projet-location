@@ -291,3 +291,12 @@ a.active, a:hover {
   }
 }
 /*# sourceMappingURL=inscription.css.map */
+#password {
+  color: black;
+}
+#conf_password{
+  color: black;
+}
+.left-col {
+  margin-left: 58px;
+}
